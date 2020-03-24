@@ -17,8 +17,8 @@
 
 FactoryBot.define do
   factory :task do
-    title { "MyTask" }
-    due_at { "2020-03-21" }
+    title { 'MyTask' }
+    due_at { '2020-03-21' }
     is_completed { false }
     user { nil }
   end

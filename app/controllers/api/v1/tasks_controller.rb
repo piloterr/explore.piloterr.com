@@ -8,13 +8,21 @@ module Api
 
       def create
         @task = Task.new(task_params)
-        if @task.save
-          render :create, status: :created
-        end
+        return unless @task.save
+
+        render :create, status: :created
       end
 
       def show
         render :show
+      end
+
+      def update
+        @task = Task.find(params[:id])
+        return unless @task.save
+
+        Task.update!(task_params)
+        render :update, status: :created
       end
 
       def destroy
@@ -29,4 +37,3 @@ module Api
     end
   end
 end
-

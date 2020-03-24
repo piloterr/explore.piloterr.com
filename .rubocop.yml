@@ -53,7 +53,7 @@ Metrics/ModuleLength:
   Max: 200
 
 Metrics/LineLength:
-  Max: 100
+  Max: 250
   # To make it possible to copy or click on URIs in the code, we allow lines
   # containing a URI to be longer than Max.
   AllowURI: true
@@ -62,6 +62,7 @@ Metrics/LineLength:
     - db/migrate/20161011151353_devise_create_users.rb
     - db/migrate/20161027190856_create_delayed_jobs.rb
     - db/migrate/20181102142200_create_active_storage_tables.active_storage.rb
+    - db/migrate/20200321011949_create_tasks.rb
   URISchemes:
     - http
     - https
