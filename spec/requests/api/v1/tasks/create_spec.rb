@@ -8,6 +8,7 @@ describe 'POST api/v1/tasks/', type: :request do
     let(:title)              { 'MyTask' }
     let(:is_completed)       { false }
     let(:due_at)             { '2020-03-26 12:02:01.037150' }
+    let(:user_id)            { user.id }
 
     let(:params) do
       {
@@ -40,9 +41,10 @@ describe 'POST api/v1/tasks/', type: :request do
     end
 
     it 'returns error if title missing' do
-      post api_v1_task_path, params: params, headers: auth_headers, as: :json
       params[:task][:title] = ''
-      expect(json[:error]).to eq 'Title can\'t be blank'
+
+      post api_v1_task_path, params: params, headers: auth_headers, as: :json
+      expect(json[:errors]).to eq ["Title can't be blank"]
     end
   end
 end
