@@ -45,7 +45,7 @@ group :development do
   gem 'letter_opener', '~> 1.7'
   gem 'listen', '~> 3.2.1'
   gem 'rails_best_practices', '~> 1.20.0'
-  gem 'reek', '~> 5.5'
+  gem 'reek', '~> 6.0'
   gem 'rubocop-rails', '~> 2.3', '>= 2.3.2'
   gem 'spring', '~> 2.1'
   gem 'spring-watcher-listen', '~> 2.0.1'
