@@ -41,7 +41,7 @@ end
 group :development do
   gem 'annotate', '~> 3.0', '>= 3.1.1'
   gem 'better_errors', '~> 2.5', '>= 2.6.0'
-  gem 'brakeman', '~> 4.7', '>= 4.7.1'
+  gem 'brakeman', '~> 4.8'
   gem 'letter_opener', '~> 1.7'
   gem 'listen', '~> 3.2.1'
   gem 'rails_best_practices', '~> 1.20.0'
