@@ -46,7 +46,7 @@ group :development do
   gem 'listen', '~> 3.2.1'
   gem 'rails_best_practices', '~> 1.20.0'
   gem 'reek', '~> 6.0'
-  gem 'rubocop-rails', '~> 2.3', '>= 2.3.2'
+  gem 'rubocop-rails', '~> 2.7'
   gem 'spring', '~> 2.1'
   gem 'spring-watcher-listen', '~> 2.0.1'
   gem 'i18n-tasks', '~> 0.9.30'
